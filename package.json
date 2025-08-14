@@ -1,0 +1,17 @@
+{
+  "name": "somalig-landing-page",
+  "version": "1.0.0",
+  "description": "Landing page da SOMALIG - Soluções de Consórcio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Build completed'",
+    "start": "npx serve ."
+  },
+  "keywords": ["landing-page", "consorcio", "somalig"],
+  "author": "SOMALIG",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.1"
+  }
+}
