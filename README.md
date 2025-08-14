@@ -48,7 +48,7 @@ somalig-landing-page/
 ├── package.json        # Dependências do projeto
 ├── vercel.json         # Configuração da Vercel
 ├── README.md           # Este arquivo
-└── assets/             # Pasta para imagens (se houver)
+└── public/             # Pasta para imagens (se houver)
 ```
 
 ## 🖼️ Imagens

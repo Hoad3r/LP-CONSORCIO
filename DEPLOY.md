@@ -13,7 +13,7 @@ somalig-landing-page/
 ├── index.html          ✅ Página principal
 ├── package.json        ✅ Configuração do projeto
 ├── vercel.json         ✅ Configuração da Vercel
-├── assets/             ✅ Pasta com imagens
+├── public/             ✅ Pasta com imagens
 │   ├── logo.png
 │   └── logo-teste.png
 ├── README.md           ✅ Documentação
@@ -21,8 +21,8 @@ somalig-landing-page/
 ```
 
 ### 1.2 Verificar imagens
-- ✅ `assets/logo.png` - Logo principal
-- ✅ `assets/logo-teste.png` - Logo alternativo
+- ✅ `public/logo.png` - Logo principal
+- ✅ `public/logo-teste.png` - Logo alternativo
 - ❌ `happy-family-celebration.png` - **FALTANDO** (imagem do herói)
 - ❌ Imagens dos depoimentos - **FALTANDO**
 
@@ -76,7 +76,7 @@ vercel
 
 ### ❌ Imagem não encontrada
 **Problema:** `404` para imagens
-**Solução:** Verificar se as imagens estão na pasta `assets/` e se os caminhos estão corretos
+**Solução:** Verificar se as imagens estão na pasta `public/` e se os caminhos estão corretos
 
 ### ❌ CSS não carrega
 **Problema:** Tailwind CSS não funciona
@@ -129,4 +129,4 @@ A Vercel fará deploy automático!
 
 ---
 
-**🎯 Próximo passo:** Fazer upload das imagens que estão faltando para a pasta `assets/`
+**🎯 Próximo passo:** Fazer upload das imagens que estão faltando para a pasta `public/`
