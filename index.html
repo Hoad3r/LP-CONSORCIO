@@ -385,64 +385,67 @@
 <body class="bg-white">
     <!-- Home Page -->
     <div id="home-page" class="page active">
-        <!-- Header -->
-        <header class="bg-[#032040] shadow-sm border-b border-[#032040]">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex justify-between items-center py-0">
-        
-                    <!-- Mobile Menu Button (apenas visível no mobile) -->
-                    <div class="md:hidden flex items-center">
-                        <button id="mobile-menu-button" class="text-white focus:outline-none">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6h.01M12 12h.01M12 18h.01" />
-                            </svg>
-                        </button>
-                    </div>
-        
-                    <!-- Logo -->
-                    <div class="flex items-center mb-3 mt-4 flex-1 md:flex-none justify-center md:justify-start">
-                        <div class="w-[225px] h-[75px] flex items-center justify-center">
-                            <img src="public/logo-teste.png" alt="Logo SOMALIG" class="w-full h-full object-contain">
-                        </div>
-                    </div>
-        
-                    <!-- Desktop Navigation -->
-                    <nav class="hidden md:flex space-x-8">
-                        <a href="#beneficios" class="text-white hover:text-[#1E83DC] font-sans">Benefícios</a>
-                        <a href="#produtos" class="text-white hover:text-[#1E83DC] font-sans">Produtos</a>
-                        <a href="#depoimentos" class="text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
-                        <a href="#contato" class="text-white hover:text-[#1E83DC] font-sans">Contato</a>
-                        <a href="#nossa" class="text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
-                    </nav>
-        
-                    <!-- Botão Simular Agora -->
-                    <button onclick="openModal()"
-                        class="bg-[#1E83DC] hover:bg-[#145fa8] text-white font-sans font-semibold px-6 py-2 rounded-lg transition-all duration-300 hover:scale-105">
-                        Simular Agora
+    <!-- Header -->
+    <header class="bg-[#032040] shadow-sm border-b border-[#032040]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-0">
+    
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </button>
                 </div>
+    
+                <!-- Logo -->
+                <div class="flex items-center mb-3 mt-4 flex-1 md:flex-none justify-center md:justify-start">
+                    <div class="w-[150px] h-[50px] md:w-[225px] md:h-[75px] flex items-center justify-center">
+                        <img src="public/logo-teste.png" alt="Logo SOMALIG" class="w-full h-full object-contain">
+                    </div>
+                </div>
+    
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#beneficios" class="text-white hover:text-[#1E83DC] font-sans">Benefícios</a>
+                    <a href="#produtos" class="text-white hover:text-[#1E83DC] font-sans">Produtos</a>
+                    <a href="#depoimentos" class="text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
+                    <a href="#contato" class="text-white hover:text-[#1E83DC] font-sans">Contato</a>
+                    <a href="#nossa" class="text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
+                </nav>
+    
+                <!-- Botão -->
+                <button onclick="openModal()"
+                    class="bg-[#1E83DC] hover:bg-[#145fa8] text-white font-sans font-semibold px-4 py-2 rounded-lg transition-all duration-300 hover:scale-105 text-sm md:px-6 md:text-base">
+                    <span class="md:hidden">Simular</span>
+                    <span class="hidden md:inline">Simular Agora</span>
+                </button>
             </div>
-        
-            <!-- Mobile Dropdown -->
-            <div id="mobile-menu" class="hidden md:hidden bg-[#032040]">
-                <a href="#beneficios" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Benefícios</a>
-                <a href="#produtos" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Produtos</a>
-                <a href="#depoimentos" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
-                <a href="#contato" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Contato</a>
-                <a href="#nossa" class="text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
+        </div>
+    
+        <!-- Mobile Dropdown lateral -->
+        <div id="mobile-menu"
+            class="fixed top-0 left-0 w-1/2 h-full bg-[#032040] transform -translate-x-full transition-transform duration-300 md:hidden z-50">
+            <div class="flex flex-col p-6 space-y-4">
+                <a href="#beneficios" class="block text-white hover:text-[#1E83DC] font-sans">Benefícios</a>
+                <a href="#produtos" class="block text-white hover:text-[#1E83DC] font-sans">Produtos</a>
+                <a href="#depoimentos" class="block text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
+                <a href="#contato" class="block text-white hover:text-[#1E83DC] font-sans">Contato</a>
+                <a href="#nossa" class="block text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
             </div>
-        </header>
-        
-        <script>
-            const mobileMenuButton = document.getElementById("mobile-menu-button");
-            const mobileMenu = document.getElementById("mobile-menu");
+        </div>
+    </header>
+    
+    <script>
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
 
-            mobileMenuButton.addEventListener("click", () => {
-                mobileMenu.classList.toggle("hidden");
-            });
-        </script>
-
+        mobileMenuButton.addEventListener("click", () => {
+            mobileMenu.classList.toggle("-translate-x-full");
+        });
+    </script>
 
         <!-- Hero Section -->
         <section class="bg-white py-20">
