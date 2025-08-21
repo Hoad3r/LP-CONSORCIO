@@ -402,7 +402,7 @@
         
                     <!-- Logo -->
                     <div class="flex items-center mb-3 mt-4 flex-1 md:flex-none justify-center md:justify-start">
-                        <div class="w-[150px] h-[50px] flex items-center justify-center">
+                        <div class="w-[225px] h-[75px] flex items-center justify-center">
                             <img src="public/logo-teste.png" alt="Logo SOMALIG" class="w-full h-full object-contain">
                         </div>
                     </div>
@@ -413,6 +413,7 @@
                         <a href="#produtos" class="text-white hover:text-[#1E83DC] font-sans">Produtos</a>
                         <a href="#depoimentos" class="text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
                         <a href="#contato" class="text-white hover:text-[#1E83DC] font-sans">Contato</a>
+                        <a href="#nossa" class="text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
                     </nav>
         
                     <!-- Botão Simular Agora -->
@@ -429,6 +430,7 @@
                 <a href="#produtos" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Produtos</a>
                 <a href="#depoimentos" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Depoimentos</a>
                 <a href="#contato" class="block px-4 py-2 text-white hover:text-[#1E83DC] font-sans">Contato</a>
+                <a href="#nossa" class="text-white hover:text-[#1E83DC] font-sans">Nossa História</a>
             </div>
         </header>
         
@@ -443,7 +445,8 @@
 
 
         <!-- Hero Section -->
-        <section class="bg-gradient-to-br from-[#A3C8F0] via-[#EAF4FB] to-white py-20">
+        <section class="bg-white py-20">
+
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -689,13 +692,37 @@ function updateSlides(swiper) {
 .card button:hover { background: #ffffff; color: #032040; }
 </style>
 
-
+   <!-- Mini Seção Nossa História estilo hero -->
+<section id="nossa" class="relative w-full h-screen">
+    <!-- Imagem de fundo -->
+    <img src="public/predio1.jpeg" 
+         alt="Nossa História" 
+         class="absolute inset-0 w-full h-full object-cover">
+  
+    <!-- Overlay com degradê -->
+    <div class="absolute inset-0 bg-gradient-to-t from-white via-white/80 to-transparent"></div>
+  
+    <!-- Conteúdo -->
+    <div class="absolute bottom-0 left-0 right-0 text-center px-6 pb-20">
+      <p class="text-xl md:text-2xl text-gray-800 font-sans max-w-3xl mx-auto">
+        Há mais de 10 anos, o SOMALIG tem sido o parceiro ideal para quem busca realizar
+        seus sonhos de forma planejada e segura.
+      </p>
+      <button onclick="showPage('sobre')"
+      class="mt-6 inline-block text-[#1E83DC] hover:text-[#145fa8] font-sans font-semibold transition duration-300 text-lg">
+      Conheça nossa história &rsaquo;
+                                    </button>
+    </div>
+  </section>
+  
+  
 </style>
 
   
         <!-- AREA PARA GIF DO INSTAGRAM -->
         <!-- Benefits Section -->
-        < <section id="beneficios" class="bg-gradient-to-br from-[#1E83DC] via-[#E6F1FA] to-white py-20">
+        <section id="beneficios" class="bg-white py-20">
+
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-sans font-black text-gray-900 mb-4">Por que Escolher Nossos Consórcios?
@@ -904,7 +931,52 @@ function updateSlides(swiper) {
                     </div>
                 </div>
             </section>
-
+            <section id="faq" class="white py-20">
+                <div class="max-w-3xl mx-auto px-6">
+                  <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">
+                    Iniciando no consórcio?
+                  </h2>
+                  <p class="text-center text-gray-600 mb-10">
+                    Confira as principais dúvidas e informações sobre a modalidade e invista no seu sonho tranquilamente.
+                  </p>
+              
+                  <div class="space-y-4">
+                    <!-- Item -->
+                    <details class="group bg-white p-5 rounded-xl shadow cursor-pointer">
+                      <summary class="flex justify-between items-center font-medium text-gray-800">
+                        O que é um consórcio?
+                        <span class="transition-transform group-open:rotate-180">⌄</span>
+                      </summary>
+                      <p class="mt-3 text-gray-600">
+                        Consórcio é uma forma de adquirir bens ou serviços por meio do autofinanciamento em grupo, sem juros, apenas com taxa de administração.
+                      </p>
+                    </details>
+              
+                    <!-- Item -->
+                    <details class="group bg-white p-5 rounded-xl shadow cursor-pointer">
+                      <summary class="flex justify-between items-center font-medium text-gray-800">
+                        Grupos: entenda como funcionam no consórcio
+                        <span class="transition-transform group-open:rotate-180">⌄</span>
+                      </summary>
+                      <p class="mt-3 text-gray-600">
+                        Os participantes se reúnem em grupos e contribuem mensalmente para formar um fundo comum, de onde saem as cartas de crédito.
+                      </p>
+                    </details>
+              
+                    <!-- Item -->
+                    <details class="group bg-white p-5 rounded-xl shadow cursor-pointer">
+                      <summary class="flex justify-between items-center font-medium text-gray-800">
+                        O papel do BACEN e da administradora de consórcio
+                        <span class="transition-transform group-open:rotate-180">⌄</span>
+                      </summary>
+                      <p class="mt-3 text-gray-600">
+                        O Banco Central regulamenta e fiscaliza os consórcios, enquanto a administradora organiza e gerencia o grupo.
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </section>
+              
             <!-- CTA Section -->
             <section class="py-20 bg-[#032040]">
                 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -1436,7 +1508,6 @@ function updateSlides(swiper) {
     </div>
 
 
-
     <!-- Modal -->
     <div id="modal-overlay" class="modal-overlay">
         <div class="modal-content">
@@ -1463,36 +1534,7 @@ function updateSlides(swiper) {
                 <input type="tel" id="celular" placeholder="Celular"
                     class="w-full h-12 px-4 text-base border-2 border-gray-300 rounded-lg focus:border-[#032040] focus:outline-none"
                     required>
-            
-                <select id="meses"
-                    class="w-full h-12 px-4 text-base border-2 border-gray-300 rounded-lg focus:border-[#032040] focus:outline-none"
-                    required>
-                    <option value="">Qual urgência para sua contemplação</option>
-                    <option value="6">1 a 6 meses</option>
-                    <option value="12">6 a 12 meses</option>
-                    <option value="13">Acima de 12 meses</option>
-                </select>
-            
-                <select id="carta"
-                    class="w-full h-12 px-4 text-base border-2 border-gray-300 rounded-lg focus:border-[#032040] focus:outline-none"
-                    required>
-                    <option value="">Qual é o produto?</option>
-                    <option value="carros">Carros</option>
-                    <option value="máquinas">Máquinas</option>
-                    <option value="imoveis">Imóveis</option>
-                    <option value="caminhoes">Caminhões</option>
-                    <option value="guindastes">Guindastes</option>
-                    <option value="outros">Outros</option>
-                    
-                </select>
-            
-                <select id="entrada"
-                    class="w-full h-12 px-4 text-base border-2 border-gray-300 rounded-lg focus:border-[#032040] focus:outline-none"
-                    required>
-                    <option value="">Você tem lance/entrada?</option>
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
+
             
                 <div class="flex items-start space-x-3 p-4 bg-gray-50 rounded-lg">
                     <input type="checkbox" id="privacidade" class="mt-1" required>
@@ -1604,9 +1646,6 @@ function updateSlides(swiper) {
             const formData = {
                 nome: document.getElementById('nome').value,
                 celular: document.getElementById('celular').value,
-                meses: mesesTexto, // já adaptado antes
-                carta: document.getElementById('carta').value,
-                entrada: document.getElementById('entrada').value, // novo campo
                 privacidade: document.getElementById('privacidade').checked
             };
             
