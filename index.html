@@ -459,50 +459,87 @@
             <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
             <!-- Conteúdo sobre o vídeo -->
-            <div class="relative z-10 h-full flex items-center">
-                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-                    <div class="grid lg:grid-cols-2 gap-12 items-center">
-                        <div class="space-y-8">
-                            <div class="space-y-4">
+            <div class="relative z-10 h-full">
+                <!-- Layout Mobile -->
+                <div class="lg:hidden h-full flex flex-col justify-between">
+                    <!-- Conteúdo do topo (mobile) -->
+                    <div class="pt-20">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="space-y-3">
                                 <span class="bg-[#032040] text-white font-sans px-3 py-1 rounded-full text-sm">Sem Juros •
                                     Parcelas Fixas</span>
-                                <h1 class="text-5xl lg:text-6xl font-sans font-black leading-tight text-white">
+                                <h1 class="text-3xl sm:text-4xl font-sans font-black leading-tight text-white">
                                     Transforme seus sonhos em realidade
                                 </h1>
+                            </div>
+                        </div>
+                    </div>
 
-                                <p class="text-xl text-white font-sans leading-relaxed">
-                                    Carros, Imóveis, Máquinas e muito mais - a oportunidade que você esperava! Junte-se a
-                                    milhares de clientes satisfeitos.
+                    <!-- Conteúdo da parte inferior (mobile) -->
+                    <div class="pb-20">
+                        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                            <div class="space-y-4">
+                                <p class="text-base text-white font-sans leading-relaxed">
+                                    Carros, Imóveis, Máquinas e muito mais - a oportunidade que você esperava!
                                 </p>
-                            </div>
 
-                            <div class="flex flex-col sm:flex-row gap-4">
-                                <button onclick="openModal()"
-                                    class="bg-[#032040] hover:bg-[#1E83DC] text-white font-sans font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105">
-                                    Solicite uma Simulação Gratuita!
-                                </button>
-                            </div>
-
-                            <div class="flex items-center gap-6 pt-4">
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                        <path
-                                            d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
-                                    </svg>
-                                    <span class="text-sm font-sans text-white">+50.000 clientes</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
-                                        <path
-                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                                    </svg>
-                                    <span class="text-sm font-sans text-white">4.95/5 avaliação</span>
+                                <div class="flex flex-col gap-4">
+                                    <button onclick="openModal()"
+                                        class="bg-[#032040] hover:bg-[#1E83DC] text-white font-sans font-semibold text-base px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105">
+                                        Solicite uma Simulação Gratuita!
+                                    </button>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Espaço vazio para manter o layout em 2 colunas -->
-                        <div class="hidden lg:block"></div>
+                <!-- Layout Desktop -->
+                <div class="hidden lg:flex h-full items-center">
+                    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center">
+                            <div class="space-y-8">
+                                <div class="space-y-4">
+                                    <span class="bg-[#032040] text-white font-sans px-3 py-1 rounded-full text-sm">Sem Juros •
+                                        Parcelas Fixas</span>
+                                    <h1 class="text-5xl xl:text-6xl font-sans font-black leading-tight text-white">
+                                        Transforme seus sonhos em realidade
+                                    </h1>ajus
+
+                                    <p class="text-xl text-white font-sans leading-relaxed">
+                                        Carros, Imóveis, Máquinas e muito mais - a oportunidade que você esperava!
+                                    </p>
+                                </div>
+
+                                <div class="flex flex-col sm:flex-row gap-4">
+                                    <button onclick="openModal()"
+                                        class="bg-[#032040] hover:bg-[#1E83DC] text-white font-sans font-semibold text-lg px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105">
+                                        Solicite uma Simulação Gratuita!
+                                    </button>
+                                </div>
+
+                                <!-- Estatísticas -->
+                                <div class="flex items-center gap-6 pt-4">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                            <path
+                                                d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z" />
+                                        </svg>
+                                        <span class="text-sm font-sans text-white">+50.000 clientes</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-5 h-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                                            <path
+                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-sm font-sans text-white">4.95/5 avaliação</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Espaço vazio para manter o layout em 2 colunas -->
+                            <div class="hidden lg:block"></div>
+                        </div>
                     </div>
                 </div>
             </div>
